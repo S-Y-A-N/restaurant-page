@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    color: white;
+}
+
+img {
+    display: block;
+}
+
+body {
+    background-color: #01010D;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    margin-left: 1rem;
+    user-select: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    
+    margin-right: 1.5rem;
+}
+
+nav button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    transition: color 300ms linear;
+}
+
+nav button:hover {
+    cursor: pointer;
+    color: rgb(197, 255, 223);
+    transition: color 300ms linear;
+}
+
+/* Content of Homepage */
+#content img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+}
