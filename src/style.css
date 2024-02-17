@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
 *,
 *::before,
 *::after {
@@ -5,12 +7,27 @@
     color: white;
 }
 
+/* Fonts */
+.jost {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.abril-fatface-regular {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+
 img {
     display: block;
 }
 
 body {
-    background-color: #01010D;
+    background-image: url(eberhard-grossgasteiger-NvesrDbsrL4-unsplash.jpg);
 }
 
 header {
@@ -41,14 +58,38 @@ nav button {
 
 nav button:hover {
     cursor: pointer;
-    color: rgb(197, 255, 223);
+    color: rgb(102, 38, 204);
     transition: color 300ms linear;
 }
 
-/* Content of Homepage */
-#content img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
+
+#content {
+    max-width: 960px;
+    margin-inline: auto;
+}
+
+/* Home */
+.promo-text {
+    text-align: center;
+    text-shadow: 1px 1px 10px black;
+    font-size: 4rem;
+}
+
+.order-button {
+    width: 130px;
+    height: 55px;
+    letter-spacing: 1px;
+    background: none;
+    border: 1px solid white;
+    padding: 1rem 1.5rem;
+
+    display: block;
     margin: 0 auto;
+}
+
+.order-button:hover,
+.order-button:focus {
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 1px 1px 10px rgb(248, 221, 255);
 }
