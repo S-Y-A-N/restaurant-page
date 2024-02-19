@@ -7,6 +7,10 @@
     color: white;
 }
 
+::selection {
+    background: rgba(126, 37, 52, 0.3);
+}
+
 /* Fonts */
 .jost {
     font-family: "Jost", sans-serif;
@@ -59,13 +63,21 @@ nav button {
 nav button:hover {
     cursor: pointer;
     color: rgb(102, 38, 204);
-    transition: color 300ms linear;
 }
 
 
 #content {
     max-width: 960px;
     margin-inline: auto;
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.45);
+    width: 100%;
+    max-width: 700px;
+    margin-inline: auto;
+    text-align: center;
+    padding: 1rem 2rem;;
 }
 
 /* Home */
@@ -92,4 +104,41 @@ nav button:hover {
     cursor: pointer;
     border: 2px solid white;
     box-shadow: 1px 1px 10px rgb(248, 221, 255);
+}
+
+/* Menu */
+.menu {
+    max-width: 800px;
+    margin-inline: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+
+    background:rgba(0, 0, 0, 0.65);
+    padding: 1.5rem;
+}
+
+.menu > div {
+    width: 100%;
+    background:rgba(0, 0, 0, 0.65);
+    transition: box-shadow 200ms linear;
+
+    display: flex;
+}
+
+.menu > div:hover,
+.menu > div:focus {
+    box-shadow: 0 0 10px rgba(255, 234, 237, 0.5);
+}
+
+.menu > div > img {
+    align-self: center;
+    max-width: 300px;
+    padding-right: 1rem;
+}
+
+h2 {
+    margin: 0;
 }
