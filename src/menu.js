@@ -15,10 +15,8 @@ export default function loadMenu() {
     const item2 = new Item('chickpea-salad.jpg', "Autumn's Bounty", "Roasted chickpeas, pumpkins and sliced apples. Adorned with raisins and fresh basil.", 4.99);
     const item3 = new Item('banana-bread.jpg', 'Banana Bread', 'Golden sweet potato fries with parsely on top and a side of ketchup.', 3.99);
     const item4 = new Item('chocolate-donut.jpg', 'Chocolate Donut', 'Golden sweet potato fries with parsely on top and a side of ketchup.', 0.99);
-    const item5 = new Item('sweet-potato.jpg', 'Sweet Potato Fries', 'Golden sweet potato fries with parsely on top and a side of ketchup.', 2.99);
-    const item6 = new Item('sweet-potato.jpg', 'Sweet Potato Fries', 'Golden sweet potato fries with parsely on top and a side of ketchup.', 2.99);
 
-    menuItems.push(item1, item2, item3, item4, item5, item6)
+    menuItems.push(item1, item2, item3, item4)
     menuItems.forEach(item => container.appendChild(displayItem(item)));
 
 
