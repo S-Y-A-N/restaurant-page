@@ -2,6 +2,7 @@ import loadHome from './home';
 import loadMenu from './menu';
 import loadAbout from './about';
 import loadContact from './contact';
+import './style.css';
 
 loadHome();
 
