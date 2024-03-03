@@ -25,7 +25,7 @@ export default function loadMenu() {
 }
 
 function Item(img, name, desc, price) {
-    this.img = img;
+    this.img = `images/${img}`;
     this.name = name;
     this.desc = desc;
     this.price = price;
