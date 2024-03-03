@@ -8,7 +8,7 @@ A simple static restaurant website, done for [The Odin Project](https://www.theo
 
 ## Built With
 
-* HTML, CSS, JS, WebPack
+* HTML, CSS, JS, Webpack
 
 ## Attribution
 
