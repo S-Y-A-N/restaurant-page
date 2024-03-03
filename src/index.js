@@ -1,9 +1,20 @@
+// imports
 import loadHome from './home';
 import loadMenu from './menu';
 import loadAbout from './about';
 import loadContact from './contact';
 import './style.css';
 
+const cache = {};
+
+function importAll(r) {
+    r.keys().forEach((key) => (cache[key] = r(key)));
+}
+
+importAll(require.context('./images', true))
+
+
+// Application
 loadHome();
 
 const navButtons = document.querySelectorAll('nav button');
