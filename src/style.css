@@ -31,6 +31,7 @@ img {
 }
 
 body {
+    margin: 0;
     background-image: url(images/eberhard-grossgasteiger-NvesrDbsrL4-unsplash.jpg);
 }
 
@@ -38,6 +39,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    margin: 8px;
 }
 
 h1 {
@@ -65,12 +68,6 @@ nav button:hover {
     color: rgb(102, 38, 204);
 }
 
-
-#content {
-    max-width: 960px;
-    margin-inline: auto;
-}
-
 .card {
     background: rgba(0, 0, 0, 0.45);
     width: 100%;
@@ -80,7 +77,11 @@ nav button:hover {
     padding: 1rem 2rem;;
 }
 
-/* Home */
+/* Home - top section */
+.top {
+    margin-bottom: 4rem;
+}
+
 .promo-text {
     text-align: center;
     text-shadow: 1px 1px 10px black;
@@ -104,6 +105,47 @@ nav button:hover {
     cursor: pointer;
     border: 2px solid white;
     box-shadow: 1px 1px 10px rgb(248, 221, 255);
+}
+
+/* Home - middle section */
+.banner {
+    background-color: rgba(52, 23, 71, 0.5);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    overflow: hidden;
+    padding: 0 1rem;
+}
+
+.banner img {
+    width: 400px;
+}
+
+.banner button {
+    margin: 0;
+    background: none;
+    border: none;
+}
+
+.banner button:first-child {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    width: 30px;
+    height: 30px;
+    border-top: 5px solid #fff;
+    border-left: 5px solid #fff;
+}
+
+.banner button:last-child {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    width: 30px;
+    height: 30px;
+    border-right: 5px solid #fff;
+    border-bottom: 5px solid #fff;
 }
 
 /* Menu */
