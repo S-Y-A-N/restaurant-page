@@ -5,13 +5,12 @@ import loadAbout from './about';
 import loadContact from './contact';
 import './style.css';
 
-const cache = {};
+import SweetPotato from './images/sweet-potato.jpg';
+import BananaBread from './images/banana-bread.jpg';
+import ChickpeaSalad from './images/chickpea-salad.jpg';
+import ChocoDonut from './images/chocolate-donut.jpg';
 
-function importAll(r) {
-    r.keys().forEach((key) => (cache[key] = r(key)));
-}
-
-importAll(require.context('./images', true))
+export { SweetPotato, BananaBread, ChickpeaSalad, ChocoDonut } 
 
 
 // Application

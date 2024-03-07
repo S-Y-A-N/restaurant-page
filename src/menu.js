@@ -1,3 +1,5 @@
+import { SweetPotato, ChickpeaSalad, BananaBread, ChocoDonut} from './index.js';
+
 export default function loadMenu() {
     const content = document.getElementById('content')
     const title = document.createElement('h2')
@@ -11,10 +13,10 @@ export default function loadMenu() {
     // Menu items
     let menuItems = []
 
-    const item1 = new Item('sweet-potato.jpg', 'Sweet Potato Fries', 'Golden sweet potato fries with parsely on top and a side of ketchup.', 2.99);
-    const item2 = new Item('chickpea-salad.jpg', "Autumn's Bounty", "Roasted chickpeas, pumpkins and sliced apples. Adorned with raisins and fresh basil.", 4.99);
-    const item3 = new Item('banana-bread.jpg', 'Banana Bread', 'Golden sweet potato fries with parsely on top and a side of ketchup.', 3.99);
-    const item4 = new Item('chocolate-donut.jpg', 'Chocolate Donut', 'Golden sweet potato fries with parsely on top and a side of ketchup.', 0.99);
+    const item1 = new Item(SweetPotato, 'Sweet Potato Fries', 'Golden sweet potato fries with parsely on top and a side of ketchup.', 2.99);
+    const item2 = new Item(ChickpeaSalad, "Autumn's Bounty", "Roasted chickpeas, pumpkins and sliced apples. Adorned with raisins and fresh basil.", 4.99);
+    const item3 = new Item(BananaBread, 'Banana Bread', 'Golden sweet potato fries with parsely on top and a side of ketchup.', 3.99);
+    const item4 = new Item(ChocoDonut, 'Chocolate Donut', 'Golden sweet potato fries with parsely on top and a side of ketchup.', 0.99);
 
     menuItems.push(item1, item2, item3, item4)
     menuItems.forEach(item => container.appendChild(displayItem(item)));
@@ -25,7 +27,7 @@ export default function loadMenu() {
 }
 
 function Item(img, name, desc, price) {
-    this.img = `images/${img}`;
+    this.img = img;
     this.name = name;
     this.desc = desc;
     this.price = price;
