@@ -19,7 +19,7 @@ loadHome();
 const navButtons = document.querySelectorAll('nav button');
 navButtons.forEach(button => {
     button.addEventListener('click', getPage);
-})
+});
 
 function getPage(e) {
     clearPage();
@@ -35,8 +35,7 @@ function getPage(e) {
             break;
         case 'Contact':   
             loadContact();
-            break;    
-
+            break;
     }
 }
 

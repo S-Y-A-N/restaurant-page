@@ -65,7 +65,30 @@ nav button {
 
 nav button:hover {
     cursor: pointer;
-    color: rgb(102, 38, 204);
+    color: rgb(102, 38, 210);
+}
+
+.hover-line::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    transition: all .6s ease 0s;
+    transition: width .3;
+}
+
+.hover-line:hover::after{
+    width: 100%;
+    transition: width .34s;
+}
+
+.underline {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
 }
 
 .card {
